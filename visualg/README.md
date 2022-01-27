@@ -6,6 +6,29 @@
 # DICAS
 
 ## Git e  GitHub
+### Testando a conexao com o GitHub
+
+```bash
+ ssh -T git@github.com
+```
+> Se receber a mensagem abaixo, você está autenticando no GitHub com o usuário da mensagem!
+
+```bash
+  Hi your_login! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+> No caso de receber a mensagem abaixo, você deve criar a chave ssh para autenticar no GitHub:
+
+```bash
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+```
+
+
 ### Criando a chave ssh no micro que vai rodar a primeira vez
 
 FONTE : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
