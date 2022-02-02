@@ -3,7 +3,7 @@ Algoritmo "temperatura"
 Var
 
    escala : caractere
-   temp, calculo, v: real
+   temp, calculo: real
 
 Inicio
 
