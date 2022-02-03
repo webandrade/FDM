@@ -8,23 +8,23 @@ Var
 
 Inicio
 
-   escreval("Qual a quantidade de atletas?")
+   escreva("Qual a quantidade de atletas?")
    leia(N)
-
+   altura <-0
    alturaMax <- 0
    nHomens <- 0
 
    para x de 1 ate N faca
 
       escreval("Digite os dados do atleta numero ", x, ":")
-      escreval("Nome: ")
+      escreva("Nome: ")
       leia(nome)
 
       sexo <- ""
-      escreval("Sexo: ")
+      escreva("Sexo: ")
       leia(sexo)
       enquanto ((sexo <> "F") e (sexo <> "M")) faca
-         escreval("Valor invalido! Favor digitar F ou M:")
+         escreva("Valor invalido! Favor digitar F ou M:")
          leia(sexo)
       fimenquanto
 
@@ -32,29 +32,29 @@ Inicio
          nHomens <- nHomens + 1
       fimse
 
-
       altura <- 0
-      escreval("Altura:")
+      escreva("Altura:")
       leia(altura)
       enquanto ( altura <= 0) faca
-         escreval("Valor invalido! Favor digitar um valor positivo:")
+         escreva("Valor invalido! Favor digitar um valor positivo:")
          leia(altura)
       fimenquanto
 
-      se altura > alturaMax entao
+      se (altura > alturaMax) entao
          atletaMaisAlto <- nome
+         alturaMax <- altura
       fimse
-      
+
       se sexo = "F" entao
-           alturaF <- alturaF + altura
-           nF <- nF + 1
+         alturaF <- alturaF + altura
+         nF <- nF + 1
       fimse
 
       peso <- 0
-      escreval("Peso:")
+      escreva("Peso:")
       leia(peso)
       enquanto ( peso <= 0) faca
-         escreval("Valor invalido! Favor digitar um valor positivo:")
+         escreva("Valor invalido! Favor digitar um valor positivo:")
          leia(peso)
       fimenquanto
 
@@ -63,13 +63,19 @@ Inicio
 
    pesoMedio <- pesoSoma / N
    percHomens <- nHomens / N * 100
-   alturaMedF <- alturaF /nF
+
 
    escreval("")
    escreval("RELATÓRIO:")
    escreval("Peso médio dos atletas: ", pesoMedio:2:2)
    escreval("Atleta mais alto: ", atletaMaisAlto)
-   escreval("Porcentagem de homens: ", percHomens:1:1 )
-   escreval("Altura média das mulheres: ", alturaMedF:1:2)
+   escreval("Porcentagem de homens: ", percHomens:1:1, "%" )
+   se alturaMedF > 0 entao
+      alturaMedF <- alturaF /nF
+      escreval("Altura média das mulheres: ", alturaMedF:1:2)
+   senao
+      escreval("Não há mulheres cadastradas")
+   fimse
+
 
 Fimalgoritmo
