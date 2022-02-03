@@ -9,7 +9,7 @@
 ### Testando a conexao com o GitHub
 
 ```bash
- ssh -T git@github.com
+ssh -T git@github.com
 ```
 > Se receber a mensagem abaixo, você está autenticando no GitHub com o usuário da mensagem!
 
@@ -34,7 +34,7 @@ git@github.com: Permission denied (publickey).
 FONTE : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ```bash
- ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 This creates a new SSH key, using the provided email as a label.
@@ -100,16 +100,16 @@ git remote add origin git@github.com:login/projeto.git
 ```
 
 ```bash
-$ git status
+git status
 ```
 
 Verificar a branch principal, e alterar caso nao seja o "main":
 ```bash
-$ git remote -v
+git remote -v
 
-$ git branch -M main
+git branch -M main
 
-$ git push -u origin main
+git push -u origin main
 ```
 
 ### Quando for necessário enviar para o github, siga os passos abaixo:
