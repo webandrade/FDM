@@ -46,7 +46,7 @@ Inicio
 
    escreval("RELATÓRIO DE CLIENTES: ")
    para x de 0 ate quantiaClientes - 1 faca
-      escreval(vetNome[x], ", ", vetFone[x], ", ", vetTipo[x], ", ", vetMinutos[x], ", ", "Conta =", vetValor[x]:2:2)
+      escreval(vetNome[x], ", ", vetFone[x], ", Tipo", vetTipo[x], ", Minutos:", vetMinutos[x], ", ", "Conta = R$ ", vetValor[x]:2:2)
    fimpara
 
 
