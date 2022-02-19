@@ -112,6 +112,11 @@ git branch -M main
 git push -u origin main
 ```
 
+Para atualizar o repositório local: 
+```bash
+git pull origin main
+```
+
 ### Quando for necessário enviar para o github, siga os passos abaixo:
 1. Adicione os arquivos novos
 ```bash
