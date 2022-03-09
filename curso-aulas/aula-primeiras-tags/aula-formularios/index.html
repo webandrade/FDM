@@ -6,5 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <h1>Loja Top</h1>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Cadastro</h2>
+        <form action="thanks.html">
+          <div>
+            <label for="ctrl-name">Nome</label>
+            <input
+              id="ctrl-name"
+              name="name"
+              type="text"
+              placeholder="Digite seu nome"
+            />
+          </div>
+          <div>
+            <label for="ctrl-email">Email</label>
+            <input
+              id="ctrl-email"
+              name="email"
+              type="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+          <div>
+            <label for="ctrl-password">Senha</label>
+            <input
+              id="ctrl-password"
+              name="password"
+              type="password"
+              placeholder="Digite a senha"
+            />
+          </div>
+
+          <div>
+            <label for="ctrl-city">Cidade</label>
+            <select name="city" id="ctrl-city">
+              <option value="0"></option>
+              <option value="1">São Paulo</option>
+              <option value="2">Belo Horizonte</option>
+              <option value="3">Recife</option>
+              <option value="4">Porto Alegre</option>
+            </select>
+            <div>
+              <label for="ctrl-level">Escolaridade</label>
+              <div>
+                <input type="radio" name="level" id="ctrl-leve-1" />
+                <label for="ctrl-level-1">Fundamental</label>
+                <input type="radio" name="level" id="ctrl-leve-2" />
+                <label for="ctrl-level-2">Médio</label>
+                <input type="radio" name="level" id="ctrl-leve-3" />
+                <label for="ctrl-level-3">Superior</label>
+                <input type="radio" name="level" id="ctrl-leve-4" />
+                <label for="ctrl-level-4">Pós</label>
+              </div>
+            </div>
+            <div>
+              <label for="ctrl-languages">Linguagens que você conhece</label>
+              <div id="ctrl-languages">
+                <input id="ctrl-languages-java" name="language1" type="checkbox"/>
+                <label for="ctrl-language-java">Java</label>
+                <input id="ctrl-languages-csharp" name="language2" type="checkbox"/>
+                <label for="ctrl-language-csharp">C#</label>
+                <input id="ctrl-languages-js" name="language3" type="checkbox"/>
+                <label for="ctrl-language-js">JavaScript</label>
+                <input id="ctrl-languages-python" name="language4" type="checkbox"/>
+                <label for="ctrl-language-python">Python</label>
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Apagar tudo" />
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
