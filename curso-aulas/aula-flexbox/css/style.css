@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+}
+
+.container-dos-blocos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.bloco {
+    width: 90px;
+    height: 200px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
