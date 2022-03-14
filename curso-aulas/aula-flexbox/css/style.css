@@ -1,21 +1,37 @@
 * {
+    box-sizing: border-box;
     margin: 0px;
 }
 
+body {
+    background-color: #bbb;
+}
+
 .container-dos-blocos{
+    height: 800px;
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /*justify-content: space-around;8*/
     align-items: center;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
     
 }
 
 .bloco {
-    width: 90px;
+    width: 280px;
     height: 200px;
     margin: 20px;
 
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
+
+    background-color: #fff;
+}
+
+.bloco:hover {
+    border: 2px solid red;
 }
