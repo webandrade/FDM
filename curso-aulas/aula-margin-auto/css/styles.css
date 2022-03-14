@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.generic-section {
+    min-height: 200px;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+p {
+    font-size: large  ;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}

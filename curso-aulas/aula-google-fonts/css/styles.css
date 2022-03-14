@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Verdana';
+}
+
+.generic-section {
+    min-height: 200px;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+p {
+    font-size: large  ;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
