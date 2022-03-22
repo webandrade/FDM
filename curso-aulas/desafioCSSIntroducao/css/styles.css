@@ -7,6 +7,8 @@
     --color-blue: #222374;
     --color-white: #FFFFFF;;
     --color-black: #000000;
+    --color-gray:#CCCCCC;
+
     ;
 }
 
@@ -25,4 +27,35 @@ header {
 
 footer {
     background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.conheca {
+    background-color: var(--color-blue);
+}
+
+.conheca h1 {
+    color: var(--color-white);
+    font-size: 32px;
+}
+
+.conheca p {
+    font-size: 14px;
+}
+
+#container-conheca {
+    background-color:var(--color-gray) ;
+}
+
+.modalidades {
+    background-color: var(--color-white);
+}
+
+.modalidades h1 {
+    color: var(--color-red);
+    font-size: 32px;
+}
+
+.modalidades p {
+    font-size: 14px;
 }
