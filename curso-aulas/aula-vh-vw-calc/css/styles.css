@@ -21,11 +21,6 @@ a:hover {
     --color-white: #fff;
 }
 
-header {
-    min-height: 100px;
-    background-color: var(--main-color);
-}
-
 .generic-section {
     min-height: 300px;
     padding: 40px 20px;
@@ -115,6 +110,17 @@ header {
     background-color: var(--secondary-color);
     color: var(--color-white);
 }
+
+header {
+    min-height: 100px;
+    /*height: 20vh;*/
+    background-color: var(--main-color);
+}
+
+main {
+    min-height: calc(100vh - 300px);
+}
+
 
 footer {
     min-height: 200px;

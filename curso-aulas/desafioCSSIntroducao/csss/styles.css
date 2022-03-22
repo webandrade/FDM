@@ -1,0 +1,28 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> );
+
+:root {
+    --color-red: #f03c42;
+    --color-blue: #222374;
+    --color-white: #FFFFFF;;
+    --color-black: #000000;
+    ;
+}
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    
+}
+
+footer {
+    background-color: var(--color-black);
+}
