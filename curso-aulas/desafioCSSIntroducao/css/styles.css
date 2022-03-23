@@ -1,84 +1,87 @@
-@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> );
+@import url(<linkrel="preconnect"href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"rel="stylesheet">);
 
 :root {
-    --color-red: #f03c42;
-    --color-blue: #222374;
-    --color-white: #FFFFFF;;
-    --color-black: #000000;
-    --color-gray:#CCCCCC;
-    ;
+  --color-red: #f03c42;
+  --color-blue: #222374;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #cccccc;
 }
 
 * {
-    margin: 0 ;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  max-height: 100px;
 }
 
 header {
-    background-color: var(--color-red);
-    color: var(--color-white);
-    
+  background-color: var(--color-red);
+  color: var(--color-white);
 }
 
 footer {
-    background-color: var(--color-black);
-    color: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 section {
-    padding-left:  120px;
-    padding-bottom: 40px ;
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px 0 120px;
+  padding-bottom: 40px;
+  
+}
+
+section h1 {
+  font-size: 32px;
+  padding: 20px 0 40px 0;
+}
+
+section h2 {
+  font-size: 20px;
+  padding: 20px 0 20px 20px;
+}
+
+section p {
+  font-size: 14px;
+  padding: 0 0 20px 20px;
 }
 
 .section-conheca {
-    background-color: var(--color-blue);
+  background-color: var(--color-blue);
 }
 
 .section-conheca h1 {
-    color: var(--color-white);
-    font-size: 32px;
-}
-
-.section-conheca p {
-    font-size: 14px;
+  color: var(--color-white);
 }
 
 .container-conheca {
-    background-color:var(--color-gray) ;
-    border-radius: 8px;
-    padding:  0 120px 0 120px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 960px;
-    min-height: 106px;
-
-    
+  background-color: var(--color-gray);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 106px;
 }
 
 .section-modalidades {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
 .section-modalidades h1 {
-    color: var(--color-red);
-    font-size: 32px;
+  color: var(--color-red);
 }
 
-.section-modalidades p {
-    font-size: 14px;
-}
+.container-modalidades {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
 
-#container-modalidades {  
-    display: flex; 
-    flex-direction: column; 
-    color: var(--color-white);
-    padding: 20px;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border: 1px solid #999;
 }
